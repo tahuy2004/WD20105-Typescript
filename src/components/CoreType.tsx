@@ -14,12 +14,12 @@ const CoreType = () => {
   const favoriteFood: string[] = ["Pizza", "Noodle", "Hamburger", "Sushi"];
 
   // enum
-  enum Color {
-    RED = "red",
-    GREEN = "green",
-    BLUE = "blue",
-  }
-  let color: Color = Color.RED;
+  // enum Color {
+  //   RED = "red",
+  //   GREEN = "green",
+  //   BLUE = "blue",
+  // }
+  // let color: Color = Color.RED;
 
   // literal type
   // Giới hạn giá trị của biến
@@ -49,7 +49,11 @@ const CoreType = () => {
     price: number;
     getInfo: () => void;
   }
+  interface ILaptop {
+    description: string;
+  }
 
+  // declare
   type LaptopType = {
     name: string;
     price: number;
@@ -70,7 +74,7 @@ const CoreType = () => {
   return (
     <>
       <div>
-        {name} {price} {isVisible} {anyVariable} {color} {literalType}
+        {name} {price} {isVisible} {anyVariable} {literalType}
       </div>
       <ul>
         {favoriteFood.map((food) => (
