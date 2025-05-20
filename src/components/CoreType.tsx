@@ -53,7 +53,6 @@ const CoreType = () => {
     description: string;
   }
 
-  // declare
   type LaptopType = {
     name: string;
     price: number;
