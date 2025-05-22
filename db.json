@@ -1,26 +1,33 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Iphone 14",
-            "price": 100000,
-            "category": "Apple",
-            "description": "Description for Product 1"
-        },
-        {
-            "id": 2,
-            "name": "Samsung Galaxy S21",
-            "category": "Samsung",
-            "price": 2000000,
-            "description": "Description for Product 2"
-        },
-        {
-            "id": 3,
-            "name": "Iphone 16 pro max",
-            "category": "Apple",
-            "price": 300000,
-            "description": "Description for Product 3"
-        }
-    ],
-    "users": []
+  "products": [
+    {
+      "id": "1",
+      "name": "Iphone 14",
+      "price": 100000,
+      "category": "Apple",
+      "description": "Description for Product 1"
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy S21",
+      "category": "Samsung",
+      "price": 2000000,
+      "description": "Description for Product 2"
+    },
+    {
+      "id": "3",
+      "name": "Iphone 16 pro max",
+      "category": "Apple",
+      "price": 300000,
+      "description": "Description for Product 3"
+    },
+    {
+      "id": "4877",
+      "productName": "Sam sung s24 ultra",
+      "price": 55555,
+      "description": "no",
+      "category": "SmartPhone"
+    }
+  ],
+  "users": []
 }
