@@ -60,6 +60,7 @@ const CoreType = () => {
   };
 
   const variableLaptop: ILaptop = {
+    // key: value
     name: "Macbook Pro",
     price: 1000,
     getInfo: () => {
