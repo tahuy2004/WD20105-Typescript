@@ -1,0 +1,33 @@
+{
+  "books": [
+    {
+      "name": "hhhhh",
+      "description": "hihi",
+      "image": "https://phongvu.vn/cong-nghe/wp-content/uploads/2024/09/130-hinh-nen-may-tinh-4k-15-1024x640.jpg",
+      "price": 12321,
+      "id": 1
+    },
+    {
+      "name": "Áo Dài Tay",
+      "description": "sad",
+      "image": "https://image.dienthoaivui.com.vn/x,webp,q90/https://dashboard.dienthoaivui.com.vn/uploads/dashboard/editor_upload/hinh-nen-may-tinh-4k-17.jpg",
+      "price": 12313213123,
+      "id": 3
+    },
+    {
+      "name": "123",
+      "description": "hehhe",
+      "image": "https://phongvu.vn/cong-nghe/wp-content/uploads/2024/09/130-hinh-nen-may-tinh-4k-57-1024x640.jpg",
+      "price": 123123,
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "xH1o8@example.com",
+      "password": "123456"
+    }
+  ]
+}
