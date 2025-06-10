@@ -2,15 +2,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router";
-import { z } from "zod";
 
-const BookSchema = z.object({
-  name: z.string().min(1, "Tên sản phẩm không được để trống"),
-  description: z.string().optional(),
-  image: z.string().url("Hinh anh k dung "),
-  price: z.number().min(0, "Giá không được nhỏ hơn 0"),
-});
-type BookSchemaType = z.infer<typeof BookSchema>;
+import { BookSchema, type BookSchemaType } from "../Schemas/books";
 
 const AddBooks = () => {
   const navigate = useNavigate();

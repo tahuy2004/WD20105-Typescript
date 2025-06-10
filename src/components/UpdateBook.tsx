@@ -3,15 +3,8 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate, useParams } from "react-router-dom";
-import { z } from "zod";
 
-const BookSchema = z.object({
-  name: z.string().min(1, "Tên sản phẩm không được để trống"),
-  description: z.string().optional(),
-  image: z.string().url("Phải là URL hợp lệ của hình ảnh"),
-  price: z.number().min(0, "Giá không được nhỏ hơn 0"),
-});
-type BookSchemaType = z.infer<typeof BookSchema>;
+import { BookSchema, type BookSchemaType } from "../Schemas/books";
 
 const UpdateBooks = () => {
   const navigate = useNavigate();
@@ -21,17 +14,17 @@ const UpdateBooks = () => {
     register,
     handleSubmit,
     reset,
+    // setValue,
     formState: { errors },
   } = useForm<BookSchemaType>({
     resolver: zodResolver(BookSchema),
   });
 
   useEffect(() => {
-    // Load data sách theo id
     const fetchBook = async () => {
       try {
         const response = await axios.get(`http://localhost:3000/books/${id}`);
-        reset(response.data); // reset form với data đã lấy về
+        reset(response.data);
       } catch (error) {
         console.log("Lỗi khi lấy sách:", error);
       }
@@ -39,7 +32,6 @@ const UpdateBooks = () => {
     if (id) fetchBook();
   }, [id, reset]);
 
-  // Xử lý submit update
   const onSubmit = async (data: BookSchemaType) => {
     try {
       await axios.put(`http://localhost:3000/books/${id}`, data);

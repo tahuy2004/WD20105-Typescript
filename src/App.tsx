@@ -6,6 +6,8 @@ import ClientLayout from "./Layouts/ClientLayout";
 import ListsBooks from "./components/ListsBooks";
 import AddBooks from "./components/AddBooks";
 import UpdateBooks from "./components/UpdateBook";
+import Login from "./components/login";
+import Register from "./components/register";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/books" element={<ListsBooks />} />
           <Route path="/books/update/:id" element={<UpdateBooks />} />
           <Route path="/add-books" element={<AddBooks />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Route>
       </Routes>
     </>
